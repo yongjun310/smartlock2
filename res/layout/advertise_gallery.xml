@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <Gallery
+            android:id="@+id/myGallery"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fadingEdge="none"
+            android:spacing="-1dip" />
+
+        <LinearLayout
+            android:id="@+id/recomm_intr"
+            android:layout_width="fill_parent"
+            android:layout_height="35dip"
+            android:layout_gravity="bottom"
+            android:background="@color/transparent"
+            android:focusable="false"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+
+            <com.smart.lock.view.GalleryPoint
+                android:id="@+id/switcherbtn_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

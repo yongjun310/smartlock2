@@ -1,0 +1,441 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Manifest Merging:
+-----------------
+Your project uses libraries that provide manifests, and your Eclipse
+project did not explicitly turn on manifest merging. In Android Gradle
+projects, manifests are always merged (meaning that contents from your
+libraries' manifests will be merged into the app manifest. If you had
+manually copied contents from library manifests into your app manifest
+you may need to remove these for the app to build correctly.
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .DS_Store
+* .gitignore
+* .metadata\
+* .metadata\.lock
+* .metadata\.log
+* .metadata\.plugins\
+* .metadata\.plugins\org.eclipse.cdt.core\
+* .metadata\.plugins\org.eclipse.cdt.core\.log
+* .metadata\.plugins\org.eclipse.cdt.make.core\
+* .metadata\.plugins\org.eclipse.cdt.make.core\specs.c
+* .metadata\.plugins\org.eclipse.cdt.make.core\specs.cpp
+* .metadata\.plugins\org.eclipse.core.resources\
+* .metadata\.plugins\org.eclipse.core.resources\.root\
+* .metadata\.plugins\org.eclipse.core.resources\.root\.indexes\
+* .metadata\.plugins\org.eclipse.core.resources\.root\.indexes\history.version
+* .metadata\.plugins\org.eclipse.core.resources\.root\.indexes\properties.index
+* .metadata\.plugins\org.eclipse.core.resources\.root\.indexes\properties.version
+* .metadata\.plugins\org.eclipse.core.resources\.root\1.tree
+* .metadata\.plugins\org.eclipse.core.resources\.safetable\
+* .metadata\.plugins\org.eclipse.core.resources\.safetable\org.eclipse.core.resources
+* .metadata\.plugins\org.eclipse.core.runtime\
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\com.android.ide.eclipse.adt.prefs
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\org.eclipse.cdt.ui.prefs
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\org.eclipse.core.resources.prefs
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\org.eclipse.jdt.ui.prefs
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\org.eclipse.team.ui.prefs
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\org.eclipse.ui.ide.prefs
+* .metadata\.plugins\org.eclipse.e4.workbench\
+* .metadata\.plugins\org.eclipse.e4.workbench\workbench.xmi
+* .metadata\.plugins\org.eclipse.jdt.core\
+* .metadata\.plugins\org.eclipse.jdt.core\invalidArchivesCache
+* .metadata\.plugins\org.eclipse.jdt.core\nonChainingJarsCache
+* .metadata\.plugins\org.eclipse.jdt.core\variablesAndContainers.dat
+* .metadata\.plugins\org.eclipse.jdt.ui\
+* .metadata\.plugins\org.eclipse.jdt.ui\OpenTypeHistory.xml
+* .metadata\.plugins\org.eclipse.jdt.ui\QualifiedTypeNameHistory.xml
+* .metadata\.plugins\org.eclipse.jdt.ui\dialog_settings.xml
+* .metadata\.plugins\org.eclipse.ui.ide\
+* .metadata\.plugins\org.eclipse.ui.ide\dialog_settings.xml
+* .metadata\.plugins\org.eclipse.ui.workbench\
+* .metadata\.plugins\org.eclipse.ui.workbench\dialog_settings.xml
+* .metadata\.plugins\org.eclipse.ui.workbench\workingsets.xml
+* .metadata\version.ini
+* README.md
+* build\
+* build\classes\
+* build\classes\production\
+* build\classes\production\appcompat_v7\
+* build\classes\production\appcompat_v7\android\
+* build\classes\production\appcompat_v7\android\support\
+* build\classes\production\appcompat_v7\android\support\v7\
+* build\classes\production\appcompat_v7\android\support\v7\appcompat\
+* build\classes\production\appcompat_v7\android\support\v7\appcompat\BuildConfig.class
+* build\classes\production\appcompat_v7\android\support\v7\appcompat\R$anim.class
+* build\classes\production\appcompat_v7\android\support\v7\appcompat\R$attr.class
+* build\classes\production\appcompat_v7\android\support\v7\appcompat\R$bool.class
+* build\classes\production\appcompat_v7\android\support\v7\appcompat\R$color.class
+* build\classes\production\appcompat_v7\android\support\v7\appcompat\R$dimen.class
+* build\classes\production\appcompat_v7\android\support\v7\appcompat\R$drawable.class
+* build\classes\production\appcompat_v7\android\support\v7\appcompat\R$id.class
+* build\classes\production\appcompat_v7\android\support\v7\appcompat\R$integer.class
+* build\classes\production\appcompat_v7\android\support\v7\appcompat\R$layout.class
+* build\classes\production\appcompat_v7\android\support\v7\appcompat\R$string.class
+* build\classes\production\appcompat_v7\android\support\v7\appcompat\R$style.class
+* build\classes\production\appcompat_v7\android\support\v7\appcompat\R$styleable.class
+* build\classes\production\appcompat_v7\android\support\v7\appcompat\R.class
+* build\classes\production\smartlock2\
+* build\classes\production\smartlock2\android\
+* build\classes\production\smartlock2\android\support\
+* build\classes\production\smartlock2\android\support\v7\
+* build\classes\production\smartlock2\android\support\v7\appcompat\
+* build\classes\production\smartlock2\android\support\v7\appcompat\BuildConfig.class
+* build\classes\production\smartlock2\android\support\v7\appcompat\Manifest$permission.class
+* build\classes\production\smartlock2\android\support\v7\appcompat\Manifest.class
+* build\classes\production\smartlock2\android\support\v7\appcompat\R$anim.class
+* build\classes\production\smartlock2\android\support\v7\appcompat\R$attr.class
+* build\classes\production\smartlock2\android\support\v7\appcompat\R$bool.class
+* build\classes\production\smartlock2\android\support\v7\appcompat\R$color.class
+* build\classes\production\smartlock2\android\support\v7\appcompat\R$dimen.class
+* build\classes\production\smartlock2\android\support\v7\appcompat\R$drawable.class
+* build\classes\production\smartlock2\android\support\v7\appcompat\R$id.class
+* build\classes\production\smartlock2\android\support\v7\appcompat\R$integer.class
+* build\classes\production\smartlock2\android\support\v7\appcompat\R$layout.class
+* build\classes\production\smartlock2\android\support\v7\appcompat\R$string.class
+* build\classes\production\smartlock2\android\support\v7\appcompat\R$style.class
+* build\classes\production\smartlock2\android\support\v7\appcompat\R$styleable.class
+* build\classes\production\smartlock2\android\support\v7\appcompat\R.class
+* build\classes\production\smartlock2\com\
+* build\classes\production\smartlock2\com\smart\
+* build\classes\production\smartlock2\com\smart\lock\
+* build\classes\production\smartlock2\com\smart\lock\BuildConfig.class
+* build\classes\production\smartlock2\com\smart\lock\Manifest$permission.class
+* build\classes\production\smartlock2\com\smart\lock\Manifest.class
+* build\classes\production\smartlock2\com\smart\lock\R$anim.class
+* build\classes\production\smartlock2\com\smart\lock\R$attr.class
+* build\classes\production\smartlock2\com\smart\lock\R$bool.class
+* build\classes\production\smartlock2\com\smart\lock\R$color.class
+* build\classes\production\smartlock2\com\smart\lock\R$dimen.class
+* build\classes\production\smartlock2\com\smart\lock\R$drawable.class
+* build\classes\production\smartlock2\com\smart\lock\R$id.class
+* build\classes\production\smartlock2\com\smart\lock\R$integer.class
+* build\classes\production\smartlock2\com\smart\lock\R$layout.class
+* build\classes\production\smartlock2\com\smart\lock\R$menu.class
+* build\classes\production\smartlock2\com\smart\lock\R$string.class
+* build\classes\production\smartlock2\com\smart\lock\R$style.class
+* build\classes\production\smartlock2\com\smart\lock\R$styleable.class
+* build\classes\production\smartlock2\com\smart\lock\R$xml.class
+* build\classes\production\smartlock2\com\smart\lock\R.class
+* build\classes\production\smartlock2\com\smart\lock\activity\
+* build\classes\production\smartlock2\com\smart\lock\activity\AmountActivity$1.class
+* build\classes\production\smartlock2\com\smart\lock\activity\AmountActivity$JsInterf$1.class
+* build\classes\production\smartlock2\com\smart\lock\activity\AmountActivity$JsInterf.class
+* build\classes\production\smartlock2\com\smart\lock\activity\AmountActivity.class
+* build\classes\production\smartlock2\com\smart\lock\activity\BaseActivity.class
+* build\classes\production\smartlock2\com\smart\lock\activity\BoxOpenActivity$1.class
+* build\classes\production\smartlock2\com\smart\lock\activity\BoxOpenActivity$MyAdapter.class
+* build\classes\production\smartlock2\com\smart\lock\activity\BoxOpenActivity.class
+* build\classes\production\smartlock2\com\smart\lock\activity\CategorySettingActivity$1.class
+* build\classes\production\smartlock2\com\smart\lock\activity\CategorySettingActivity$2.class
+* build\classes\production\smartlock2\com\smart\lock\activity\CategorySettingActivity.class
+* build\classes\production\smartlock2\com\smart\lock\activity\DetailActivity$1.class
+* build\classes\production\smartlock2\com\smart\lock\activity\DetailActivity$2.class
+* build\classes\production\smartlock2\com\smart\lock\activity\DetailActivity.class
+* build\classes\production\smartlock2\com\smart\lock\activity\LockActivity$1.class
+* build\classes\production\smartlock2\com\smart\lock\activity\LockActivity$2.class
+* build\classes\production\smartlock2\com\smart\lock\activity\LockActivity$3.class
+* build\classes\production\smartlock2\com\smart\lock\activity\LockActivity$4.class
+* build\classes\production\smartlock2\com\smart\lock\activity\LockActivity$5.class
+* build\classes\production\smartlock2\com\smart\lock\activity\LockActivity$6.class
+* build\classes\production\smartlock2\com\smart\lock\activity\LockActivity$BlurImageView.class
+* build\classes\production\smartlock2\com\smart\lock\activity\LockActivity.class
+* build\classes\production\smartlock2\com\smart\lock\activity\LoginActivity$1$1.class
+* build\classes\production\smartlock2\com\smart\lock\activity\LoginActivity$1.class
+* build\classes\production\smartlock2\com\smart\lock\activity\LoginActivity$2.class
+* build\classes\production\smartlock2\com\smart\lock\activity\LoginActivity$3.class
+* build\classes\production\smartlock2\com\smart\lock\activity\LoginActivity$4.class
+* build\classes\production\smartlock2\com\smart\lock\activity\LoginActivity.class
+* build\classes\production\smartlock2\com\smart\lock\activity\MainActivity$1$1.class
+* build\classes\production\smartlock2\com\smart\lock\activity\MainActivity$1.class
+* build\classes\production\smartlock2\com\smart\lock\activity\MainActivity$10.class
+* build\classes\production\smartlock2\com\smart\lock\activity\MainActivity$11.class
+* build\classes\production\smartlock2\com\smart\lock\activity\MainActivity$2.class
+* build\classes\production\smartlock2\com\smart\lock\activity\MainActivity$3.class
+* build\classes\production\smartlock2\com\smart\lock\activity\MainActivity$4.class
+* build\classes\production\smartlock2\com\smart\lock\activity\MainActivity$5.class
+* build\classes\production\smartlock2\com\smart\lock\activity\MainActivity$6.class
+* build\classes\production\smartlock2\com\smart\lock\activity\MainActivity$7.class
+* build\classes\production\smartlock2\com\smart\lock\activity\MainActivity$8.class
+* build\classes\production\smartlock2\com\smart\lock\activity\MainActivity$9.class
+* build\classes\production\smartlock2\com\smart\lock\activity\MainActivity$MyOnPageChangeListener.class
+* build\classes\production\smartlock2\com\smart\lock\activity\MainActivity.class
+* build\classes\production\smartlock2\com\smart\lock\activity\SettingDetailActivity$1.class
+* build\classes\production\smartlock2\com\smart\lock\activity\SettingDetailActivity.class
+* build\classes\production\smartlock2\com\smart\lock\activity\SettingSexActivity.class
+* build\classes\production\smartlock2\com\smart\lock\activity\SettingWizardActivity$1.class
+* build\classes\production\smartlock2\com\smart\lock\activity\SettingWizardActivity.class
+* build\classes\production\smartlock2\com\smart\lock\activity\ShareActivity$1.class
+* build\classes\production\smartlock2\com\smart\lock\activity\ShareActivity$2.class
+* build\classes\production\smartlock2\com\smart\lock\activity\ShareActivity$3.class
+* build\classes\production\smartlock2\com\smart\lock\activity\ShareActivity$4$1$1.class
+* build\classes\production\smartlock2\com\smart\lock\activity\ShareActivity$4$1.class
+* build\classes\production\smartlock2\com\smart\lock\activity\ShareActivity$4.class
+* build\classes\production\smartlock2\com\smart\lock\activity\ShareActivity$5.class
+* build\classes\production\smartlock2\com\smart\lock\activity\ShareActivity$AuthListener.class
+* build\classes\production\smartlock2\com\smart\lock\activity\ShareActivity.class
+* build\classes\production\smartlock2\com\smart\lock\activity\SplashActivity$1$1.class
+* build\classes\production\smartlock2\com\smart\lock\activity\SplashActivity$1.class
+* build\classes\production\smartlock2\com\smart\lock\activity\SplashActivity$2.class
+* build\classes\production\smartlock2\com\smart\lock\activity\SplashActivity$3.class
+* build\classes\production\smartlock2\com\smart\lock\activity\SplashActivity.class
+* build\classes\production\smartlock2\com\smart\lock\activity\WebViewActivity$1.class
+* build\classes\production\smartlock2\com\smart\lock\activity\WebViewActivity$2.class
+* build\classes\production\smartlock2\com\smart\lock\activity\WebViewActivity$3.class
+* build\classes\production\smartlock2\com\smart\lock\activity\WebViewActivity$4.class
+* build\classes\production\smartlock2\com\smart\lock\activity\WebViewActivity$JsInterf.class
+* build\classes\production\smartlock2\com\smart\lock\activity\WebViewActivity$MyWebViewDownLoadListener.class
+* build\classes\production\smartlock2\com\smart\lock\activity\WebViewActivity.class
+* build\classes\production\smartlock2\com\smart\lock\activity\WizardActivity$1.class
+* build\classes\production\smartlock2\com\smart\lock\activity\WizardActivity$2.class
+* build\classes\production\smartlock2\com\smart\lock\activity\WizardActivity.class
+* build\classes\production\smartlock2\com\smart\lock\adapter\
+* build\classes\production\smartlock2\com\smart\lock\adapter\CommonListViewAdapter$1.class
+* build\classes\production\smartlock2\com\smart\lock\adapter\CommonListViewAdapter$GenerateBitmapBG.class
+* build\classes\production\smartlock2\com\smart\lock\adapter\CommonListViewAdapter$ViewHolder.class
+* build\classes\production\smartlock2\com\smart\lock\adapter\CommonListViewAdapter.class
+* build\classes\production\smartlock2\com\smart\lock\adapter\LoopImageViewPagerAdapter.class
+* build\classes\production\smartlock2\com\smart\lock\adapter\MainFragmentPagerAdapter$OnExtraPageChangeListener.class
+* build\classes\production\smartlock2\com\smart\lock\adapter\MainFragmentPagerAdapter.class
+* build\classes\production\smartlock2\com\smart\lock\adapter\MyExpandableListAdapter$1.class
+* build\classes\production\smartlock2\com\smart\lock\adapter\MyExpandableListAdapter$ChildHolder.class
+* build\classes\production\smartlock2\com\smart\lock\adapter\MyExpandableListAdapter$GenerateBitmapBG.class
+* build\classes\production\smartlock2\com\smart\lock\adapter\MyExpandableListAdapter$GroupHolder.class
+* build\classes\production\smartlock2\com\smart\lock\adapter\MyExpandableListAdapter.class
+* build\classes\production\smartlock2\com\smart\lock\common\
+* build\classes\production\smartlock2\com\smart\lock\common\ActionTypeEnum.class
+* build\classes\production\smartlock2\com\smart\lock\common\ContentTypeEnum.class
+* build\classes\production\smartlock2\com\smart\lock\common\FavoriteTypeEnum.class
+* build\classes\production\smartlock2\com\smart\lock\common\SlideConstants.class
+* build\classes\production\smartlock2\com\smart\lock\dto\
+* build\classes\production\smartlock2\com\smart\lock\dto\AccountActionLogDTO.class
+* build\classes\production\smartlock2\com\smart\lock\dto\AccountDTO.class
+* build\classes\production\smartlock2\com\smart\lock\dto\AccountInfoDTO.class
+* build\classes\production\smartlock2\com\smart\lock\dto\AppVersionDTO.class
+* build\classes\production\smartlock2\com\smart\lock\dto\BaseMessageDTO.class
+* build\classes\production\smartlock2\com\smart\lock\dto\CommonMessageDTO.class
+* build\classes\production\smartlock2\com\smart\lock\dto\ContentDTO.class
+* build\classes\production\smartlock2\com\smart\lock\dto\ImageInfoDTO.class
+* build\classes\production\smartlock2\com\smart\lock\dto\MessageDTO.class
+* build\classes\production\smartlock2\com\smart\lock\dto\ProductDTO.class
+* build\classes\production\smartlock2\com\smart\lock\fragment\
+* build\classes\production\smartlock2\com\smart\lock\fragment\ExchangeFragment$1.class
+* build\classes\production\smartlock2\com\smart\lock\fragment\ExchangeFragment$2.class
+* build\classes\production\smartlock2\com\smart\lock\fragment\ExchangeFragment.class
+* build\classes\production\smartlock2\com\smart\lock\fragment\LikeFragment$1.class
+* build\classes\production\smartlock2\com\smart\lock\fragment\LikeFragment$JsInterf$1.class
+* build\classes\production\smartlock2\com\smart\lock\fragment\LikeFragment$JsInterf.class
+* build\classes\production\smartlock2\com\smart\lock\fragment\LikeFragment.class
+* build\classes\production\smartlock2\com\smart\lock\fragment\MainPageFragment$1.class
+* build\classes\production\smartlock2\com\smart\lock\fragment\MainPageFragment$2.class
+* build\classes\production\smartlock2\com\smart\lock\fragment\MainPageFragment$3.class
+* build\classes\production\smartlock2\com\smart\lock\fragment\MainPageFragment$JsInterf.class
+* build\classes\production\smartlock2\com\smart\lock\fragment\MainPageFragment.class
+* build\classes\production\smartlock2\com\smart\lock\fragment\MyFragment$1.class
+* build\classes\production\smartlock2\com\smart\lock\fragment\MyFragment$2.class
+* build\classes\production\smartlock2\com\smart\lock\fragment\MyFragment.class
+* build\classes\production\smartlock2\com\smart\lock\global\
+* build\classes\production\smartlock2\com\smart\lock\global\AbActivity$1.class
+* build\classes\production\smartlock2\com\smart\lock\global\AbActivity$2.class
+* build\classes\production\smartlock2\com\smart\lock\global\AbActivity$3.class
+* build\classes\production\smartlock2\com\smart\lock\global\AbActivity$4.class
+* build\classes\production\smartlock2\com\smart\lock\global\AbActivity$5.class
+* build\classes\production\smartlock2\com\smart\lock\global\AbActivity$6.class
+* build\classes\production\smartlock2\com\smart\lock\global\AbActivity.class
+* build\classes\production\smartlock2\com\smart\lock\global\AbAppData.class
+* build\classes\production\smartlock2\com\smart\lock\global\AbAppException.class
+* build\classes\production\smartlock2\com\smart\lock\global\AbConstant.class
+* build\classes\production\smartlock2\com\smart\lock\global\AbGraphical.class
+* build\classes\production\smartlock2\com\smart\lock\global\AbMonitorView.class
+* build\classes\production\smartlock2\com\smart\lock\global\AbStrUtil.class
+* build\classes\production\smartlock2\com\smart\lock\global\AbViewUtil.class
+* build\classes\production\smartlock2\com\smart\lock\handler\
+* build\classes\production\smartlock2\com\smart\lock\handler\ListEventHandler.class
+* build\classes\production\smartlock2\com\smart\lock\receiver\
+* build\classes\production\smartlock2\com\smart\lock\receiver\AppReceiver.class
+* build\classes\production\smartlock2\com\smart\lock\receiver\GetuiSdkHttpPost$1.class
+* build\classes\production\smartlock2\com\smart\lock\receiver\GetuiSdkHttpPost.class
+* build\classes\production\smartlock2\com\smart\lock\receiver\PushDemoReceiver$1.class
+* build\classes\production\smartlock2\com\smart\lock\receiver\PushDemoReceiver.class
+* build\classes\production\smartlock2\com\smart\lock\receiver\SystemReceiver.class
+* build\classes\production\smartlock2\com\smart\lock\response\
+* build\classes\production\smartlock2\com\smart\lock\response\AccountResponse.class
+* build\classes\production\smartlock2\com\smart\lock\response\AppVersionResponse.class
+* build\classes\production\smartlock2\com\smart\lock\response\BaseResponse.class
+* build\classes\production\smartlock2\com\smart\lock\response\BooleanResponse.class
+* build\classes\production\smartlock2\com\smart\lock\response\ContentListResponse.class
+* build\classes\production\smartlock2\com\smart\lock\response\LoginResponse.class
+* build\classes\production\smartlock2\com\smart\lock\response\MessageResponse.class
+* build\classes\production\smartlock2\com\smart\lock\service\
+* build\classes\production\smartlock2\com\smart\lock\service\DataService.class
+* build\classes\production\smartlock2\com\smart\lock\service\HeartBeatService.class
+* build\classes\production\smartlock2\com\smart\lock\service\NotificationListener.class
+* build\classes\production\smartlock2\com\smart\lock\service\NotificationService.class
+* build\classes\production\smartlock2\com\smart\lock\sina\
+* build\classes\production\smartlock2\com\smart\lock\sina\AccessTokenKeeper.class
+* build\classes\production\smartlock2\com\smart\lock\sina\Constants.class
+* build\classes\production\smartlock2\com\smart\lock\sina\WBSocialActivity$1.class
+* build\classes\production\smartlock2\com\smart\lock\sina\WBSocialActivity$2.class
+* build\classes\production\smartlock2\com\smart\lock\sina\WBSocialActivity.class
+* build\classes\production\smartlock2\com\smart\lock\utils\
+* build\classes\production\smartlock2\com\smart\lock\utils\ActionLogOperator.class
+* build\classes\production\smartlock2\com\smart\lock\utils\BuildProperties.class
+* build\classes\production\smartlock2\com\smart\lock\utils\ContentsDataOperator.class
+* build\classes\production\smartlock2\com\smart\lock\utils\DBHelper.class
+* build\classes\production\smartlock2\com\smart\lock\utils\DeviceUtils.class
+* build\classes\production\smartlock2\com\smart\lock\utils\DisplayUtils$1.class
+* build\classes\production\smartlock2\com\smart\lock\utils\DisplayUtils.class
+* build\classes\production\smartlock2\com\smart\lock\utils\FastBlur.class
+* build\classes\production\smartlock2\com\smart\lock\utils\FavoriteUtils$1.class
+* build\classes\production\smartlock2\com\smart\lock\utils\FavoriteUtils.class
+* build\classes\production\smartlock2\com\smart\lock\utils\FileUtils.class
+* build\classes\production\smartlock2\com\smart\lock\utils\NetUtils.class
+* build\classes\production\smartlock2\com\smart\lock\utils\PageChangeUtils.class
+* build\classes\production\smartlock2\com\smart\lock\utils\PollingUtils.class
+* build\classes\production\smartlock2\com\smart\lock\utils\RomUtils.class
+* build\classes\production\smartlock2\com\smart\lock\utils\SecurityUtils$1.class
+* build\classes\production\smartlock2\com\smart\lock\utils\SecurityUtils.class
+* build\classes\production\smartlock2\com\smart\lock\utils\ShareUtils$1.class
+* build\classes\production\smartlock2\com\smart\lock\utils\ShareUtils$2$1.class
+* build\classes\production\smartlock2\com\smart\lock\utils\ShareUtils$2$2$1$1.class
+* build\classes\production\smartlock2\com\smart\lock\utils\ShareUtils$2$2$1.class
+* build\classes\production\smartlock2\com\smart\lock\utils\ShareUtils$2$2$2.class
+* build\classes\production\smartlock2\com\smart\lock\utils\ShareUtils$2$2.class
+* build\classes\production\smartlock2\com\smart\lock\utils\ShareUtils$2.class
+* build\classes\production\smartlock2\com\smart\lock\utils\ShareUtils$3.class
+* build\classes\production\smartlock2\com\smart\lock\utils\ShareUtils$4.class
+* build\classes\production\smartlock2\com\smart\lock\utils\ShareUtils$AuthListener.class
+* build\classes\production\smartlock2\com\smart\lock\utils\ShareUtils.class
+* build\classes\production\smartlock2\com\smart\lock\utils\SharedPreferencesUtils.class
+* build\classes\production\smartlock2\com\smart\lock\utils\SysApplication.class
+* build\classes\production\smartlock2\com\smart\lock\utils\ThreadHelper$1.class
+* build\classes\production\smartlock2\com\smart\lock\utils\ThreadHelper$2.class
+* build\classes\production\smartlock2\com\smart\lock\utils\ThreadHelper$3.class
+* build\classes\production\smartlock2\com\smart\lock\utils\ThreadHelper$4.class
+* build\classes\production\smartlock2\com\smart\lock\utils\ThreadHelper.class
+* build\classes\production\smartlock2\com\smart\lock\utils\WidgetUtils$1.class
+* build\classes\production\smartlock2\com\smart\lock\utils\WidgetUtils$2.class
+* build\classes\production\smartlock2\com\smart\lock\utils\WidgetUtils.class
+* build\classes\production\smartlock2\com\smart\lock\view\
+* build\classes\production\smartlock2\com\smart\lock\view\AdvertiseGalleryAdapter.class
+* build\classes\production\smartlock2\com\smart\lock\view\AdvertiseLayout$1.class
+* build\classes\production\smartlock2\com\smart\lock\view\AdvertiseLayout.class
+* build\classes\production\smartlock2\com\smart\lock\view\CustomDialog$Builder$1.class
+* build\classes\production\smartlock2\com\smart\lock\view\CustomDialog$Builder$2.class
+* build\classes\production\smartlock2\com\smart\lock\view\CustomDialog$Builder.class
+* build\classes\production\smartlock2\com\smart\lock\view\CustomDialog.class
+* build\classes\production\smartlock2\com\smart\lock\view\CustomProgressDialog.class
+* build\classes\production\smartlock2\com\smart\lock\view\GalleryPoint.class
+* build\classes\production\smartlock2\com\smart\lock\view\IconEditText.class
+* build\classes\production\smartlock2\com\smart\lock\view\PinnedHeaderExpandableListView$OnHeaderUpdateListener.class
+* build\classes\production\smartlock2\com\smart\lock\view\PinnedHeaderExpandableListView.class
+* build\classes\production\smartlock2\com\smart\lock\view\PullToRefreshListView$1.class
+* build\classes\production\smartlock2\com\smart\lock\view\PullToRefreshListView$OnClickRefreshListener.class
+* build\classes\production\smartlock2\com\smart\lock\view\PullToRefreshListView$OnRefreshListener.class
+* build\classes\production\smartlock2\com\smart\lock\view\PullToRefreshListView.class
+* build\classes\production\smartlock2\com\smart\lock\view\ShimmerFrameLayout$1.class
+* build\classes\production\smartlock2\com\smart\lock\view\ShimmerFrameLayout$2.class
+* build\classes\production\smartlock2\com\smart\lock\view\ShimmerFrameLayout$3.class
+* build\classes\production\smartlock2\com\smart\lock\view\ShimmerFrameLayout$Mask.class
+* build\classes\production\smartlock2\com\smart\lock\view\ShimmerFrameLayout$MaskAngle.class
+* build\classes\production\smartlock2\com\smart\lock\view\ShimmerFrameLayout$MaskShape.class
+* build\classes\production\smartlock2\com\smart\lock\view\ShimmerFrameLayout$MaskTranslation.class
+* build\classes\production\smartlock2\com\smart\lock\view\ShimmerFrameLayout.class
+* build\classes\production\smartlock2\com\smart\lock\wxapi\
+* build\classes\production\smartlock2\com\smart\lock\wxapi\WXEntryActivity.class
+* build\classes\production\smartlock2\smartlock2.apk
+* build\classes\production\smartlock2\smartlock2.unaligned.apk
+* gradle\
+* gradle\wrapper\
+* gradle\wrapper\gradle-wrapper.jar
+* gradle\wrapper\gradle-wrapper.properties
+* proguard-project.txt
+* proguard\
+* proguard\dump.txt
+* proguard\mapping.txt
+* proguard\seeds.txt
+* proguard\usage.txt
+* smartlock2v2.0_4.apk
+* smartlock2v2.0_5.apk
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:19.1.0
+android-support-v7-appcompat.jar => com.android.support:appcompat-v7:19.1.0
+gson-2.3.1.jar => com.google.code.gson:gson:2.3.1
+
+Replaced Libraries with Dependencies:
+-------------------------------------
+The importer recognized the following library projects as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the source files in your project were of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the library replacement in the import wizard and try
+again:
+
+android-support-v7-appcompat => [com.android.support:appcompat-v7:19.1.0]
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => SmartLock\src\main\AndroidManifest.xml
+* assets\ => SmartLock\src\main\assets\
+* libs\ => SmartLock\src\main\java\
+* libs\armeabi\libgetuiext.so => SmartLock\src\main\jniLibs\armeabi\libgetuiext.so
+* libs\armeabi\libweibosdkcore.so => SmartLock\src\main\jniLibs\armeabi\libweibosdkcore.so
+* libs\GetuiExt-2.0.3.jar => SmartLock\libs\GetuiExt-2.0.3.jar
+* libs\GetuiSdk2.4.1.0.jar => SmartLock\libs\GetuiSdk2.4.1.0.jar
+* libs\httpmime-4.1.3.jar => SmartLock\libs\httpmime-4.1.3.jar
+* libs\json_simple-1.1.jar => SmartLock\libs\json_simple-1.1.jar
+* libs\SocialSDK_QQZone_1.jar => SmartLock\libs\SocialSDK_QQZone_1.jar
+* libs\SocialSDK_QQZone_2.jar => SmartLock\libs\SocialSDK_QQZone_2.jar
+* libs\SocialSDK_QQZone_3.jar => SmartLock\libs\SocialSDK_QQZone_3.jar
+* libs\SocialSDK_renren_2.jar => SmartLock\libs\SocialSDK_renren_2.jar
+* libs\SocialSDK_tencentWB_1.jar => SmartLock\libs\SocialSDK_tencentWB_1.jar
+* libs\SocialSDK_tencentWB_2.jar => SmartLock\libs\SocialSDK_tencentWB_2.jar
+* libs\SocialSDK_tencentWB_3.jar => SmartLock\libs\SocialSDK_tencentWB_3.jar
+* libs\SocialSDK_WeiXin_1.jar => SmartLock\libs\SocialSDK_WeiXin_1.jar
+* libs\SocialSDK_WeiXin_2.jar => SmartLock\libs\SocialSDK_WeiXin_2.jar
+* libs\umeng_social_sdk.jar => SmartLock\libs\umeng_social_sdk.jar
+* libs\umeng_statistic_v4.6.3_feedback_v4.3.jar => SmartLock\libs\umeng_statistic_v4.6.3_feedback_v4.3.jar
+* libs\weibosdk.jar => SmartLock\libs\weibosdk.jar
+* libs\weibosdkcore.jar => SmartLock\libs\weibosdkcore.jar
+* lint.xml => SmartLock\lint.xml
+* proguard.cfg => SmartLock\proguard.cfg
+* res\ => SmartLock\src\main\res\
+* src\ => SmartLock\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

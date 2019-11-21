@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ShimmerFrameLayout">
+        <attr name="auto_start" format="boolean"/>
+        <attr name="base_alpha" format="float"/>
+        <attr name="duration" format="integer"/>
+        <attr name="repeat_count" format="integer"/>
+        <attr name="repeat_delay" format="integer"/>
+        <attr name="repeat_mode" format="enum">
+            <enum name="restart" value="1"/>
+            <enum name="reverse" value="2"/>
+        </attr>
+        <attr name="angle" format="enum">
+            <enum name="cw_0" value="0"/>
+            <enum name="cw_90" value="90"/>
+            <enum name="cw_180" value="180"/>
+            <enum name="cw_270" value="270"/>
+        </attr>
+        <attr name="dropoff" format="float"/>
+        <attr name="fixed_width" format="dimension"/>
+        <attr name="fixed_height" format="dimension"/>
+        <attr name="intensity" format="float"/>
+        <attr name="relative_width" format="float"/>
+        <attr name="relative_height" format="float"/>
+        <attr name="shape" format="enum">
+            <enum name="linear" value="0"/>
+            <enum name="radial" value="1"/>
+        </attr>
+        <attr name="tilt" format="float"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="StickyListHeadersListView">
+        <attr name="stickyListHeadersListViewStyle" format="reference"/>
+
+        <!-- View attributes -->
+        <attr name="android:clipToPadding"/>
+        <attr name="android:scrollbars"/>
+        <attr name="android:overScrollMode"/>
+        <attr name="android:padding"/>
+        <attr name="android:paddingLeft"/>
+        <attr name="android:paddingTop"/>
+        <attr name="android:paddingRight"/>
+        <attr name="android:paddingBottom"/>
+
+        <!-- ListView attributes -->
+        <attr name="android:fadingEdgeLength"/>
+        <attr name="android:requiresFadingEdge"/>
+        <attr name="android:cacheColorHint"/>
+        <attr name="android:choiceMode"/>
+        <attr name="android:drawSelectorOnTop"/>
+        <attr name="android:fastScrollEnabled"/>
+        <attr name="android:fastScrollAlwaysVisible"/>
+        <attr name="android:listSelector"/>
+        <attr name="android:scrollingCache"/>
+        <attr name="android:scrollbarStyle"/>
+        <attr name="android:divider"/>
+        <attr name="android:dividerHeight"/>
+        <attr name="android:transcriptMode"/>
+        <attr name="android:stackFromBottom"/>
+
+        <!-- StickyListHeaders attributes -->
+        <attr name="hasStickyHeaders" format="boolean"/>
+        <attr name="isDrawingListUnderStickyHeader" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="LockPatternView">
+
+        <!--
+             Aspect to use when drawing LockPatternView. Choices are "square"(default), "lock_width"
+             or "lock_height"
+        -->
+        <attr name="aspect">
+            <enum name="square" value="0"/>
+            <enum name="lockWidth" value="1"/>
+            <enum name="lockHeight" value="2"/>
+        </attr>
+        <attr name="line" format="color"/>
+        <attr name="btnNormal" format="reference"/>
+        <attr name="btnTouched" format="reference"/>
+        <attr name="circleNormal" format="reference"/>
+        <attr name="circleGreen" format="reference"/>
+        <attr name="circleRed" format="reference"/>
+        <attr name="arrowGreenUp" format="reference"/>
+        <attr name="arrowRedUp" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="roundedimageview">
+        <attr name="border_thickness" format="dimension"/>
+        <attr name="border_inside_color" format="color"/>
+        <attr name="border_outside_color" format="color"></attr>
+    </declare-styleable>
+
+</resources>

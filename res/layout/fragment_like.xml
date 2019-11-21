@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/layout_likeFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="51dp">
+
+    <TextView
+            android:id="@+id/like_page_title"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="喜欢"
+            android:textSize="18sp"
+            android:textColor="@color/contentText"
+            android:background="@drawable/btm_line"/>
+
+    <WebView
+            android:id="@+id/webview_favorite"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="50dp"
+            android:layout_alignParentTop="true"/>
+
+    <RelativeLayout
+            android:id="@+id/layout_drawer"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/transparentBlack"
+            android:onClick="removeDrawer">
+    </RelativeLayout>
+
+</RelativeLayout>

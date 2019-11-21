@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="orange">#FFC600</color>
+    <color name="red">#FF5179</color>
+    <color name="white">#ffffff</color>
+    <color name="halfwhite">#80ffffff</color>
+    <color name="black">#000000</color>
+    <color name="halfgrey">#5f888888</color>
+    <color name="grey">#888888</color>
+    <color name="lightgrey">#eeeeee</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparentBlack">#66000000</color>
+    <color name="sixtyBlack">#99000000</color>
+    <color name="contentBg">#EEEEEE</color>
+    <color name="contentTitle">#AAAAAA</color>
+    <color name="contentText">#333333</color>
+
+    <color name="update_blue">#0066cc</color>
+    <color name="maintabgrey">#858585</color>
+    <color name="maintabred">#ea4c87</color>
+    <color name="maintabbg">#f5f5f5</color>
+    <color name="tabright">#999999</color>
+    <color name="tabline">#e8e8e8</color>
+    <color name="sharebg">#efefef</color>
+    <color name="tablistline">#dcdcdc</color>
+    <color name="dialogline">#bcbcbc</color>
+    <color name="maintabline">#1f000000</color>
+    <color name="sharetransparentblack">#80000000</color>
+    <color name="imagebg">#FFDDDDDD</color>
+    <color name="dialogtextcancel">#666666</color>
+    <color name="unenabletextcolor">#4DAAAAAA</color>
+
+    <color name="gesture_background">#ff303237</color>
+    <color name="color_hei_8">#00000000</color>
+    <drawable name="trans">@color/color_hei_8</drawable>
+</resources>

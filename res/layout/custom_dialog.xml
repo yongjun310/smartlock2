@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="315dp"
+    android:layout_height="178dp"
+    android:background="@drawable/popup_bg"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="128dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/DialogText.Title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="title"
+            android:textColor="@color/contentText"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/message"
+                style="@style/DialogText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="content"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:textColor="@color/contentText"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/dialogline" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/positiveButton"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="400"
+            android:background="@color/transparent"
+            android:layout_gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/maintabred"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/devide_line"
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/dialogline" />
+
+        <Button
+            android:id="@+id/negativeButton"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="400"
+            android:layout_gravity="center"
+            android:background="@color/transparent"
+            android:singleLine="true"
+            android:textColor="@color/dialogtextcancel"
+            android:textSize="17sp" />
+
+
+    </LinearLayout>
+</LinearLayout>

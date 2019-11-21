@@ -1,0 +1,168 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.smart.lock.activity.WebViewActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout_webview_action"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/contentBg">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="13dp"
+            android:layout_height="22dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/back_btn"
+            android:onClick="backClick" />
+
+        <TextView
+            android:id="@+id/back_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@id/btn_back"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:onClick="backClick" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="详情"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:onClick="backClick" />
+
+        <ImageButton
+            android:id="@+id/btn_webview_close"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:visibility="invisible"
+            android:background="@drawable/close_webview"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_webview_split"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/layout_webview_action"
+        android:layout_centerHorizontal="true"
+        android:background="@color/tablistline"></RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_mainTab"
+        android:layout_width="fill_parent"
+        android:layout_height="51dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/top_line" >
+
+        <RelativeLayout
+            android:id="@+id/layout_mainTab_home"
+            android:layout_width="fill_parent"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:onClick="tabHomeClick" >
+
+            <ImageView
+                android:id="@+id/img_mainTab_home"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/webview_buttom_home" />
+
+            <TextView
+                android:id="@+id/txt_mainTab_home"
+                android:layout_width="fill_parent"
+                android:layout_height="15dp"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:layout_below="@+id/img_mainTab_home"
+                android:text="@string/first_page"
+                android:textColor="@color/maintabgrey"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_mainTab_like"
+            android:layout_width="fill_parent"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:onClick="favoriteClick" >
+
+            <ImageView
+                android:id="@+id/img_mainTab_like"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/webview_buttom_favorite" />
+
+            <TextView
+                android:id="@+id/txt_mainTab_like"
+                android:layout_width="fill_parent"
+                android:layout_height="15dp"
+                android:layout_below="@+id/img_mainTab_like"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:text="@string/like"
+                android:textColor="@color/maintabgrey"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/layout_mainTab_share"
+            android:layout_width="fill_parent"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:onClick="shareClick" >
+
+            <ImageView
+                android:id="@+id/img_mainTab_share"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/webview_buttom_share" />
+
+            <TextView
+                android:id="@+id/txt_mainTab_share"
+                android:layout_width="fill_parent"
+                android:layout_height="15dp"
+                android:layout_below="@+id/img_mainTab_share"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:text="奖0.02元"
+                android:textColor="@color/maintabgrey"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <WebView
+        android:id="@+id/webview_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/layout_webview_split"
+        android:layout_above="@id/layout_mainTab"/>
+</RelativeLayout>

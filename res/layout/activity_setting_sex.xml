@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/maintabbg"
+    tools:context="com.smart.lock.activity.SettingSexActivity" >
+
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="49dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/maintabred"
+            android:id="@+id/layout_settings_sex_title">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_settings_sex"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:text="选择性别"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="49dp"
+            android:layout_below="@id/layout_settings_sex_title"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="182dp"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+            <ImageButton
+                android:id="@+id/img_female"
+                android:layout_width="96dp"
+                android:layout_height="132dp"
+                android:background="@drawable/male_selector"
+                android:onClick="femaleSelect"/>
+            <ImageButton
+                android:id="@+id/img_male"
+                android:layout_width="96dp"
+                android:layout_height="132dp"
+                android:layout_marginLeft="52dp"
+                android:background="@drawable/female_selector"
+                android:onClick="maleSelect"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

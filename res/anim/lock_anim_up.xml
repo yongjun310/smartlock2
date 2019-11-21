@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false" >
+
+    <item
+        android:drawable="@drawable/unfold_arrow_4"
+        android:duration="250">
+    </item>
+    <item
+        android:drawable="@drawable/unfold_arrow_3"
+        android:duration="250">
+    </item>
+    <item
+        android:drawable="@drawable/unfold_arrow_2"
+        android:duration="250">
+    </item>
+    <item
+        android:drawable="@drawable/unfold_arrow_1"
+        android:duration="250">
+    </item>
+
+    <item
+        android:drawable="@drawable/unfold_arrow_4"
+        android:duration="2500">
+    </item>
+</animation-list>

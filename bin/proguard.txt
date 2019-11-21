@@ -1,0 +1,411 @@
+# view res/layout/activity_box_open.xml #generated:6
+# view res/layout/activity_detail.xml #generated:10
+# view res/layout/activity_lock.xml #generated:13
+# view res/layout/activity_main.xml #generated:8
+# view res/layout/service_lock.xml #generated:13
+-keep class android.support.v4.view.ViewPager { <init>(...); }
+
+# view res/layout/abc_action_menu_item_layout.xml #generated:17
+-keep class android.support.v7.internal.view.menu.ActionMenuItemView { <init>(...); }
+
+# view res/layout/abc_action_menu_layout.xml #generated:17
+-keep class android.support.v7.internal.view.menu.ActionMenuView { <init>(...); }
+
+# view res/layout/abc_expanded_menu_layout.xml #generated:17
+-keep class android.support.v7.internal.view.menu.ExpandedMenuView { <init>(...); }
+
+# view res/layout/abc_list_menu_item_layout.xml #generated:17
+# view res/layout/abc_popup_menu_item_layout.xml #generated:17
+-keep class android.support.v7.internal.view.menu.ListMenuItemView { <init>(...); }
+
+# view res/layout/abc_action_bar_decor_include.xml #generated:19
+# view res/layout/abc_action_bar_decor_include.xml #generated:47
+# view res/layout/abc_action_bar_decor_overlay.xml #generated:29
+# view res/layout/abc_action_bar_decor_overlay.xml #generated:52
+-keep class android.support.v7.internal.widget.ActionBarContainer { <init>(...); }
+
+# view res/layout/abc_action_bar_decor_include.xml #generated:31
+# view res/layout/abc_action_bar_decor_overlay.xml #generated:40
+# view res/layout/abc_action_mode_bar.xml #generated:19
+-keep class android.support.v7.internal.widget.ActionBarContextView { <init>(...); }
+
+# view res/layout/abc_action_bar_decor_overlay.xml #generated:17
+-keep class android.support.v7.internal.widget.ActionBarOverlayLayout { <init>(...); }
+
+# view res/layout/abc_action_bar_decor_include.xml #generated:25
+# view res/layout/abc_action_bar_decor_overlay.xml #generated:35
+-keep class android.support.v7.internal.widget.ActionBarView { <init>(...); }
+
+# view res/layout/abc_action_bar_home.xml #generated:17
+-keep class android.support.v7.internal.widget.ActionBarView$HomeView { <init>(...); }
+
+# view res/layout/abc_action_bar_tabbar.xml #generated:17
+# view res/layout/abc_activity_chooser_view.xml #generated:19
+-keep class android.support.v7.internal.widget.LinearLayoutICS { <init>(...); }
+
+# view v11\res/layout-v11/abc_action_bar_decor.xml #generated:17
+# view v11\res/layout-v11/abc_simple_decor.xml #generated:17
+-keep class android.support.v7.internal.widget.NativeActionModeAwareLayout { <init>(...); }
+
+# view res/layout/abc_action_bar_tab.xml #generated:17
+-keep class android.support.v7.internal.widget.ScrollingTabContainerView$TabView { <init>(...); }
+
+# view res/layout/abc_search_view.xml #generated:85
+-keep class android.support.v7.widget.SearchView$SearchAutoComplete { <init>(...); }
+
+# view res/layout/umeng_socialize_comment_detail.xml #generated:23
+-keep class com.google.android.maps.MapView { <init>(...); }
+
+# view AndroidManifest.xml #generated:344
+-keep class com.igexin.download.DownloadProvider { <init>(...); }
+
+# view AndroidManifest.xml #generated:338
+-keep class com.igexin.download.DownloadReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:334
+-keep class com.igexin.download.DownloadService { <init>(...); }
+
+# view AndroidManifest.xml #generated:350
+-keep class com.igexin.getuiext.activity.GetuiExtActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:371
+-keep class com.igexin.getuiext.service.GetuiExtService { <init>(...); }
+
+# view AndroidManifest.xml #generated:359
+-keep class com.igexin.getuiext.service.PayloadReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:325
+-keep class com.igexin.sdk.PushActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:317
+-keep class com.igexin.sdk.PushManagerReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:300
+-keep class com.igexin.sdk.PushReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:293
+-keep class com.igexin.sdk.PushService { <init>(...); }
+
+# view AndroidManifest.xml #generated:427
+-keep class com.sina.weibo.sdk.component.WeiboSdkBrowser { <init>(...); }
+
+# view res/layout/activity_social.xml #generated:12
+-keep class com.sina.weibo.sdk.component.view.AttentionComponentView { <init>(...); }
+
+# view res/layout/activity_social.xml #generated:18
+-keep class com.sina.weibo.sdk.component.view.CommentComponentView { <init>(...); }
+
+# view AndroidManifest.xml #generated:432
+-keep class com.sina.weibo.sdk.net.DownloadService { <init>(...); }
+
+# view AndroidManifest.xml #generated:228
+-keep class com.smart.lock.activity.AmountActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:240
+-keep class com.smart.lock.activity.BoxOpenActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:401
+-keep class com.smart.lock.activity.CategorySettingActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:392
+-keep class com.smart.lock.activity.DetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:79
+-keep class com.smart.lock.activity.LockActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:169
+-keep class com.smart.lock.activity.LoginActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:72
+-keep class com.smart.lock.activity.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:402
+-keep class com.smart.lock.activity.SettingDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:422
+-keep class com.smart.lock.activity.SettingGesturePWActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:388
+-keep class com.smart.lock.activity.SettingSexActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:235
+-keep class com.smart.lock.activity.SettingWizardActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:246
+-keep class com.smart.lock.activity.ShareActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:257
+-keep class com.smart.lock.activity.SplashActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:162
+-keep class com.smart.lock.activity.WebViewActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:222
+-keep class com.smart.lock.activity.WizardActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:64
+-keep class com.smart.lock.global.LockApplication { <init>(...); }
+
+# view AndroidManifest.xml #generated:413
+-keep class com.smart.lock.pattern.CreateGesturePasswordActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:416
+-keep class com.smart.lock.pattern.EnsureGesturePasswordActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:404
+-keep class com.smart.lock.pattern.UnlockGesturePasswordActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:108
+-keep class com.smart.lock.receiver.AppReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:284
+-keep class com.smart.lock.receiver.PushReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:124
+-keep class com.smart.lock.receiver.SystemReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:89
+-keep class com.smart.lock.service.DataService { <init>(...); }
+
+# view AndroidManifest.xml #generated:98
+-keep class com.smart.lock.service.HeartBeatService { <init>(...); }
+
+# view AndroidManifest.xml #generated:435
+-keep class com.smart.lock.service.LockService { <init>(...); }
+
+# view AndroidManifest.xml #generated:151
+-keep class com.smart.lock.service.NotificationListener { <init>(...); }
+
+# view AndroidManifest.xml #generated:374
+-keep class com.smart.lock.service.NotificationService { <init>(...); }
+
+# view AndroidManifest.xml #generated:445
+-keep class com.smart.lock.service.UnlockGesturePasswordService { <init>(...); }
+
+# view res/layout/main_list_item.xml #generated:7
+-keep class com.smart.lock.view.AbImageView { <init>(...); }
+
+# view res/layout/activity_wizard.xml #generated:44
+# view res/layout/advertise_gallery.xml #generated:29
+-keep class com.smart.lock.view.GalleryPoint { <init>(...); }
+
+# view res/layout/gesturepassword_create.xml #generated:31
+# view res/layout/gesturepassword_ensure.xml #generated:59
+# view res/layout/gesturepassword_unlock.xml #generated:56
+-keep class com.smart.lock.view.LockPatternView { <init>(...); }
+
+# view res/layout/main_page.xml #generated:46
+-keep class com.smart.lock.view.PinnedHeaderExpandableListView { <init>(...); }
+
+# view res/layout/drawer_layout.xml #generated:27
+-keep class com.smart.lock.view.RoundImageView { <init>(...); }
+
+# view res/layout/activity_lock.xml #generated:330
+# view res/layout/service_lock.xml #generated:344
+-keep class com.smart.lock.view.ShimmerFrameLayout { <init>(...); }
+
+# view AndroidManifest.xml #generated:204
+-keep class com.smart.lock.wxapi.WXEntryActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:198
+-keep class com.tencent.connect.common.AssistActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:185
+-keep class com.tencent.tauth.AuthActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:176
+-keep class com.umeng.socialize.view.ShareActivity { <init>(...); }
+
+# view res/layout/umeng_socialize_ucenter_platform_item.xml #generated:31
+-keep class com.umeng.socialize.view.SwitchImageView { <init>(...); }
+
+# view res/layout/umeng_socialize_post_share.xml #generated:2
+-keep class com.umeng.socialize.view.wigets.KeyboardListenRelativeLayout { <init>(...); }
+
+# view res/layout/umeng_socialize_comment_view.xml #generated:30
+-keep class com.umeng.socialize.view.wigets.PullToRefreshListView { <init>(...); }
+
+# view res/layout/umeng_socialize_at_view.xml #generated:21
+-keep class com.umeng.socialize.view.wigets.SearchBox { <init>(...); }
+
+# view res/layout/umeng_socialize_at_view.xml #generated:38
+-keep class com.umeng.socialize.view.wigets.SectionListView { <init>(...); }
+
+# view res/layout/umeng_socialize_at_view.xml #generated:47
+-keep class com.umeng.socialize.view.wigets.SlideBar { <init>(...); }
+
+# onClick res/layout/fragment_exchange.xml #generated:69
+-keepclassmembers class * { *** amountSelect(...); }
+
+# onClick res/layout/activity_web_view.xml #generated:15
+# onClick res/layout/activity_web_view.xml #generated:25
+# onClick res/layout/activity_web_view.xml #generated:37
+# onClick res/layout/gesturepassword_unlock.xml #generated:84
+# onClick res/layout/page_header.xml #generated:11
+-keepclassmembers class * { *** backClick(...); }
+
+# onClick res/layout/main_page.xml #generated:58
+-keepclassmembers class * { *** backTop(...); }
+
+# onClick res/layout/drawer_layout.xml #generated:35
+# onClick res/layout/drawer_layout.xml #generated:49
+-keepclassmembers class * { *** bindMobile(...); }
+
+# onClick res/layout/setting_detail_layout.xml #generated:156
+-keepclassmembers class * { *** categoryClick(...); }
+
+# onClick res/layout/drawer_layout.xml #generated:372
+-keepclassmembers class * { *** checkVersion(...); }
+
+# onClick res/layout/drawer_layout.xml #generated:245
+-keepclassmembers class * { *** clickExchange(...); }
+
+# onClick res/layout/drawer_layout.xml #generated:132
+-keepclassmembers class * { *** clickMessage(...); }
+
+# onClick res/layout/setting_gesture_layout.xml #generated:31
+# onClick res/layout/setting_gesture_layout.xml #generated:49
+-keepclassmembers class * { *** closeGestureClick(...); }
+
+# onClick res/layout/setting_detail_layout.xml #generated:302
+# onClick res/layout/setting_detail_layout.xml #generated:320
+-keepclassmembers class * { *** closeLockClick(...); }
+
+# onClick res/layout/activity_setting_wizard.xml #generated:39
+# onClick res/layout/setting_detail_layout.xml #generated:78
+-keepclassmembers class * { *** closeSysLockClick(...); }
+
+# onClick res/layout/activity_login.xml #generated:76
+-keepclassmembers class * { *** codeClick(...); }
+
+# onClick res/layout/activity_detail.xml #generated:15
+-keepclassmembers class * { *** detailBack(...); }
+
+# onClick res/layout/activity_detail.xml #generated:51
+# onClick res/layout/activity_detail.xml #generated:60
+-keepclassmembers class * { *** detailDownload(...); }
+
+# onClick res/layout/activity_detail.xml #generated:114
+-keepclassmembers class * { *** detailFavorite(...); }
+
+# onClick res/layout/activity_detail.xml #generated:141
+-keepclassmembers class * { *** detailRead(...); }
+
+# onClick res/layout/activity_detail.xml #generated:87
+-keepclassmembers class * { *** detailShare(...); }
+
+# onClick res/layout/fragment_exchange.xml #generated:80
+-keepclassmembers class * { *** exchangeSubmit(...); }
+
+# onClick res/layout/setting_detail_layout.xml #generated:207
+-keepclassmembers class * { *** faqClick(...); }
+
+# onClick res/layout/activity_web_view.xml #generated:102
+-keepclassmembers class * { *** favoriteClick(...); }
+
+# onClick res/layout/activity_lock.xml #generated:248
+# onClick res/layout/service_lock.xml #generated:262
+-keepclassmembers class * { *** favoriteContent(...); }
+
+# onClick res/layout/setting_detail_layout.xml #generated:246
+-keepclassmembers class * { *** feedbackClick(...); }
+
+# onClick res/layout/activity_setting_sex.xml #generated:40
+-keepclassmembers class * { *** femaleSelect(...); }
+
+# onClick res/layout/activity_box_open.xml #generated:66
+# onClick res/layout/activity_login.xml #generated:105
+-keepclassmembers class * { *** loginClick(...); }
+
+# onClick res/layout/activity_setting_sex.xml #generated:46
+-keepclassmembers class * { *** maleSelect(...); }
+
+# onClick res/layout/activity_wizard.xml #generated:1
+# onClick res/layout/activity_wizard.xml #generated:10
+# onClick res/layout/activity_wizard.xml #generated:21
+-keepclassmembers class * { *** nextClick(...); }
+
+# onClick res/layout/share_list.xml #generated:111
+# onClick res/layout/share_list.xml #generated:21
+# onClick res/layout/share_list.xml #generated:27
+# onClick res/layout/share_list.xml #generated:55
+# onClick res/layout/share_list.xml #generated:83
+-keepclassmembers class * { *** onItemClick(...); }
+
+# onClick res/layout/activity_setting_wizard.xml #generated:50
+-keepclassmembers class * { *** openFloatClick(...); }
+
+# onClick res/layout/activity_setting_wizard.xml #generated:28
+# onClick res/layout/setting_detail_layout.xml #generated:106
+-keepclassmembers class * { *** openSysNotiClick(...); }
+
+# onClick res/layout/activity_login.xml #generated:128
+-keepclassmembers class * { *** qqLogin(...); }
+
+# onClick res/layout/fragment_amount.xml #generated:16
+# onClick res/layout/fragment_exchange.xml #generated:101
+# onClick res/layout/fragment_like.xml #generated:26
+-keepclassmembers class * { *** removeDrawer(...); }
+
+# onClick res/layout/activity_login.xml #generated:45
+-keepclassmembers class * { *** resetClick(...); }
+
+# onClick res/layout/activity_setting_wizard.xml #generated:62
+-keepclassmembers class * { *** selfStartClick(...); }
+
+# onClick res/layout/setting_detail_layout.xml #generated:36
+# onClick res/layout/setting_gesture_layout.xml #generated:60
+-keepclassmembers class * { *** setPWClick(...); }
+
+# onClick res/layout/drawer_layout.xml #generated:294
+-keepclassmembers class * { *** settingClick(...); }
+
+# onClick res/layout/activity_web_view.xml #generated:131
+-keepclassmembers class * { *** shareClick(...); }
+
+# onClick res/layout/activity_lock.xml #generated:213
+# onClick res/layout/service_lock.xml #generated:227
+-keepclassmembers class * { *** shareContent(...); }
+
+# onClick res/layout/activity_lock.xml #generated:134
+# onClick res/layout/service_lock.xml #generated:148
+-keepclassmembers class * { *** showorHideDetail(...); }
+
+# onClick res/layout/activity_setting_wizard.xml #generated:74
+-keepclassmembers class * { *** skipClick(...); }
+
+# onClick res/layout/activity_category_setting.xml #generated:210
+-keepclassmembers class * { *** sureClick(...); }
+
+# onClick res/layout/activity_lock.xml #generated:283
+# onClick res/layout/service_lock.xml #generated:297
+-keepclassmembers class * { *** tabDetailClick(...); }
+
+# onClick res/layout/activity_main.xml #generated:23
+# onClick res/layout/activity_web_view.xml #generated:74
+-keepclassmembers class * { *** tabHomeClick(...); }
+
+# onClick res/layout/activity_category_setting.xml #generated:120
+# onClick res/layout/activity_category_setting.xml #generated:149
+# onClick res/layout/activity_category_setting.xml #generated:179
+# onClick res/layout/activity_category_setting.xml #generated:20
+# onClick res/layout/activity_category_setting.xml #generated:49
+# onClick res/layout/activity_category_setting.xml #generated:79
+-keepclassmembers class * { *** tabItemClick(...); }
+
+# onClick res/layout/activity_main.xml #generated:51
+-keepclassmembers class * { *** tabLikeClick(...); }
+
+# onClick res/layout/activity_main.xml #generated:80
+-keepclassmembers class * { *** tabMyClick(...); }
+
+# onClick res/layout/activity_lock.xml #generated:178
+# onClick res/layout/service_lock.xml #generated:192
+-keepclassmembers class * { *** tabWallPaperClick(...); }
+
+# onClick res/layout/activity_box_open.xml #generated:50
+-keepclassmembers class * { *** temploginClick(...); }
+
+# onClick res/layout/activity_login.xml #generated:131
+-keepclassmembers class * { *** wxLogin(...); }
+

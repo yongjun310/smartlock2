@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_mallFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/maintabbg"
+    android:layout_marginBottom="51dp">
+
+
+    <LinearLayout
+        android:id="@+id/sticky_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/page_title"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="@string/miaoxiu"
+            android:textSize="18sp"
+            android:textColor="@color/contentText"
+            android:background="@drawable/btm_line"/>
+
+        <ImageView
+            android:id="@+id/no_content_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="122dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:src="@drawable/icon_nowifi"/>
+
+        <TextView
+            android:id="@+id/no_content_hint"
+            android:layout_width="fill_parent"
+            android:layout_height="46dp"
+            android:gravity="center"
+            android:layout_marginTop="42dp"
+            android:visibility="gone"
+            android:text="@string/wifi_update"
+            android:textSize="16sp"
+            android:textColor="@color/tabright"/>
+
+        <com.smart.lock.view.PinnedHeaderExpandableListView
+            android:id="@+id/expandablelist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@null"
+            android:childDivider="@color/maintabbg"
+            android:childIndicatorLeft="0dp"
+            android:groupIndicator="@null"
+            android:scrollbarAlwaysDrawHorizontalTrack="false"></com.smart.lock.view.PinnedHeaderExpandableListView>
+        
+    </LinearLayout>
+
+    <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/btn_main_top" android:layout_alignParentBottom="true" android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp" android:layout_marginBottom="10dp" android:src="@drawable/icon_back_top"
+            android:visibility="gone" android:onClick="backTop"/>
+</RelativeLayout>

@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.smart.lock"
+    android:versionCode="14"
+    android:versionName="2.0.3" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="10" />
+
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <!-- 网络权限 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK" >
+    </uses-permission>
+    
+	<uses-permission
+		android:name="android.permission.SYSTEM_OVERLAY_WINDOW"></uses-permission>
+    <!-- 开机启动 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" >
+    </uses-permission>
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 往SDCard读写数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 短信 -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <!-- 电话 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <!-- QQ、QQ空间所需权限 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- 屏蔽系统锁屏所需权限 -->
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <!-- 蓝牙 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="getui.permission.GetuiService.com.smart.lock" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <permission android:name="android.permission.MANAGE_APP_TOKENS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <permission android:name="android.permission.WRITE_APN_SETTINGS" />
+
+    <permission
+        android:name="getui.permission.GetuiService.com.smart.lock"
+        android:protectionLevel="normal" >
+    </permission>
+
+    <application
+        android:name="com.smart.lock.global.LockApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:persistent="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.LockActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".service.DataService"
+            android:enabled="true"
+            android:label="@string/app_name"
+            android:process=":service" >
+            <intent-filter android:priority="1000" >
+                <action android:name="com.smart.lock.service.DataService" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".service.HeartBeatService"
+            android:enabled="true"
+            android:process=":remote"
+            android:label="@string/app_name" >
+            <intent-filter android:priority="1000" >
+                <action android:name="com.smart.lock.service.HeartBeatService" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name=".receiver.AppReceiver"
+            android:process=":service" >
+            <intent-filter android:priority="999" >
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" >
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+                <action android:name="android.intent.action.BATTERY_CHANGED" />
+                <action android:name="android.intent.action.POWER_DISCONNECTED" />
+                <action android:name="android.intent.action.POWER_CONNECTED" />
+                <action android:name="android.intent.action.SCREEN_ON" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                </action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receiver.SystemReceiver" >
+            <intent-filter android:priority="999" >
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+                <action android:name="android.intent.action.BATTERY_CHANGED" />
+                <action android:name="android.intent.action.POWER_DISCONNECTED" />
+                <action android:name="android.intent.action.POWER_CONNECTED" />
+                <action android:name="android.intent.action.SCREEN_ON" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="com.igexin.sdk.action.refreshls" />
+            </intent-filter>
+        </receiver>
+        <!-- <receiver android:name=".receiver.MyDeviceAdminReceiver"
+			    android:label="@string/miaoxiu"  
+			    android:description="@string/miaoxiu"  
+		        android:permission="android.permission.BIND_DEVICE_ADMIN"
+				android:process=":remote">
+			    <meta-data android:name="android.app.device_admin"
+			            android:resource="@xml/device_admin" />
+			    
+			    <intent-filter>
+			        <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+			    </intent-filter>
+		</receiver> -->
+
+
+        <service
+            android:name=".service.NotificationListener"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE"
+            android:enabled="true"
+            android:process=":service" >
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".activity.WebViewActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- *************************    分享相关的注册 START **************************** -->
+        <!-- 分享内容编辑页 -->
+        <activity
+            android:name="com.umeng.socialize.view.ShareActivity"
+            android:configChanges="orientation|keyboard"
+            android:noHistory="true"
+            android:theme="@style/Theme.UMDialog"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+
+        <!-- 腾讯SSO授权的Activity注册 -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent100424468" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 微信回调activity -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+
+        <!-- *************************    分享相关的注册 END **************************** -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="55179462fd98c5bda60008ac" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="yincheng" >
+        </meta-data>
+
+        <activity
+            android:name=".activity.WizardActivity"
+            android:label="@string/title_activity_wizard"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name=".activity.AmountActivity"
+            android:label="@string/title_activity_wizard"
+            android:screenOrientation="portrait" >
+        </activity>
+
+
+        <activity
+            android:name=".activity.SettingWizardActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name=".activity.BoxOpenActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_boxopen" >
+        </activity>
+
+        <activity
+            android:name=".activity.ShareActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:label="@string/title_activity_boxopen" >
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <!-- 个推SDK配置开始 -->
+        <!-- 配置的第三方参数属性 -->
+        <meta-data
+            android:name="PUSH_APPID"
+            android:value="ouPJYZwUq79QxPAteBfmK6" />
+        <meta-data
+            android:name="PUSH_APPKEY"
+            android:value="wwFc5t1dqh61EmexWWuoR8" />
+        <meta-data
+            android:name="PUSH_APPSECRET"
+            android:value="vS8G83A9fD6xWKPLlP9ac4" />
+        <meta-data
+            android:name="PUSH_GROUPID"
+            android:value="" />
+
+        <!-- 配置第三方Receiver -->
+        <receiver
+            android:name=".receiver.PushReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.ouPJYZwUq79QxPAteBfmK6" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 配置SDK核心服务 -->
+        <service
+            android:name="com.igexin.sdk.PushService"
+            android:exported="true"
+            android:label="NotificationCenter"
+            android:process=":pushservice" >
+        </service>
+
+        <receiver android:name="com.igexin.sdk.PushReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="com.igexin.sdk.action.refreshls" />
+            </intent-filter>
+        </receiver>
+        <!--
+        <receiver
+            android:name="com.igexin.sdk.PushReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.pushmanager" />
+            </intent-filter>
+        </receiver>
+        -->
+        <receiver
+            android:name="com.igexin.sdk.PushManagerReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.pushmanager" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.igexin.sdk.PushActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:process=":pushservice"
+            android:taskAffinity="com.igexin.sdk.PushActivityTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+
+        <service
+            android:name="com.igexin.download.DownloadService"
+            android:process=":pushservice" />
+
+        <receiver android:name="com.igexin.download.DownloadReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="com.igexin.download.DownloadProvider"
+            android:authorities="downloads.com.smart.lock"
+            android:process=":pushservice" />
+        <!-- android:authorities="downloads.第三方包名" -->
+
+        <activity
+            android:name="com.igexin.getuiext.activity.GetuiExtActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:process=":pushservice"
+            android:taskAffinity="android.task.myServicetask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <receiver
+            android:name="com.igexin.getuiext.service.PayloadReceiver"
+            android:exported="false" >
+            <intent-filter>
+
+                <!-- 这个com.igexin.sdk.action.7fjUl2Z3LH6xYy7NQK4ni4固定，不能修改 -->
+                <action android:name="com.igexin.sdk.action.7fjUl2Z3LH6xYy7NQK4ni4" />
+                <!-- android:name="com.igexin.sdk.action.第三方的appId" -->
+                <action android:name="com.igexin.sdk.action.ouPJYZwUq79QxPAteBfmK6" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.igexin.getuiext.service.GetuiExtService"
+            android:process=":pushservice" />
+        <service
+            android:name=".service.NotificationService"
+            android:enabled="true"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
+            android:process=":service" >
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibilityservice" />
+        </service>
+        <!-- 个推SDK配置结束 -->
+        <activity
+            android:name=".activity.SettingSexActivity"
+            android:label="@string/title_activity_setting_sex" >
+        </activity>
+        <activity
+                android:name=".activity.DetailActivity"
+                android:label="@string/app_name"
+                android:launchMode="singleInstance"
+                android:theme="@style/myTransparent"
+                android:screenOrientation="portrait" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.CategorySettingActivity" />
+        <activity android:name=".activity.SettingDetailActivity" />
+
+        <activity
+            android:name="com.smart.lock.pattern.UnlockGesturePasswordActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.UNLOCK_ACTIVITY" />
+            </intent-filter>
+        </activity>
+        <!-- android:launchMode="singleTask" -->
+        <activity
+            android:name=".pattern.CreateGesturePasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pattern.EnsureGesturePasswordActivity"
+            android:screenOrientation="portrait" />
+
+
+        <!-- android:launchMode="singleTask" -->
+        <activity
+            android:name=".activity.SettingGesturePWActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 必须注册在微博授权，分享微博时候用到 -->
+        <activity android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser" 
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustResize"
+            android:exported="false" >
+        </activity>
+        <service android:name="com.sina.weibo.sdk.net.DownloadService"
+            android:exported="false"></service>
+        
+        <service android:name=".service.LockService"
+            android:process=":service"
+            android:exported="true"
+		    android:enabled="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" /> 
+                <action android:name="com.smart.lock.service.LockService" />
+            </intent-filter>
+        </service>
+        
+        <service android:name=".service.UnlockGesturePasswordService"
+		    android:enabled="true" >
+            <intent-filter>
+                <action android:name="com.smart.lock.service.UnlockGesturePasswordService" />
+            </intent-filter>
+        </service>
+        
+    </application>
+
+</manifest>

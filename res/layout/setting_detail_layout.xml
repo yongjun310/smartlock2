@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_drawer_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/maintabbg"
+    android:orientation="vertical">
+
+    <include layout="@layout/page_header" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:text="密码"
+                android:textColor="@color/tabright"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/tablistline" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="1px"
+                android:layout_marginTop="1px"
+                android:background="@color/white"
+                android:onClick="setPWClick">
+
+                <TextView
+                    android:id="@+id/pw_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="设置手势密码"
+                    android:textColor="@color/contentText"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/arr_right" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/img_tablist_line"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:text="系统初始设置"
+                android:textColor="@color/tabright"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/tablistline" />
+
+            <RelativeLayout
+                android:id="@+id/layout_drawer_myfoot"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="1px"
+                android:layout_marginTop="1px"
+                android:background="@color/white"
+                android:onClick="closeSysLockClick">
+
+                <TextView
+                    android:id="@+id/txt_drawer_myfoot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="关闭系统锁屏，来防止出现双重锁屏"
+                    android:textColor="@color/contentText"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/arr_right" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_drawer_message"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="1px"
+                android:layout_marginTop="1px"
+                android:background="@color/white"
+                android:onClick="openSysNotiClick">
+
+                <TextView
+                    android:id="@+id/txt_drawer_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="开启消息通知，以便及时获取消息"
+                    android:textColor="@color/contentText"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/arr_right" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/tablistline" />
+
+            <TextView
+                android:id="@+id/category_setting_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:text="分类订阅管理"
+                android:textColor="@color/tabright"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/tablistline" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="1px"
+                android:layout_marginTop="1px"
+                android:background="@color/white"
+                android:onClick="categoryClick">
+
+                <TextView
+                    android:id="@+id/category_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="已订阅：萌物,汽车，风景..."
+                    android:textColor="@color/contentText"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/arr_right" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/tablistline" />
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/maintabbg"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@color/tablistline" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/tablistline" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_drawer_faq"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="1px"
+                    android:background="@color/white"
+                    android:onClick="faqClick">
+
+                    <ImageView
+                        android:id="@+id/img_faq_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/icon_problem"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/txt_drawer_faq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@id/img_faq_icon"
+                        android:text="常见问题"
+                        android:textColor="@color/contentText"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/arr_right" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_drawer_feedback"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="1px"
+                    android:background="@color/white"
+                    android:onClick="feedbackClick">
+
+                    <ImageView
+                        android:id="@+id/img_feedback_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/icon_problem"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/txt_drawer_feedback"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@id/img_feedback_icon"
+                        android:text="意见反馈"
+                        android:textColor="@color/contentText"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/arr_right" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@color/tablistline" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/tablistline" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="20dp"
+                android:background="@color/tablistline" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="1px"
+                android:layout_marginTop="1px"
+                android:background="@color/white"
+                android:onClick="closeLockClick">
+
+                <TextView
+                    android:id="@+id/lock_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="启用遇见锁屏"
+                    android:textColor="@color/contentText"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/lock_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="15dp"
+                    android:onClick="closeLockClick"
+                    android:src="@drawable/switch_selector" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/tablistline" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

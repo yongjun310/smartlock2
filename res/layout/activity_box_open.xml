@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+   <android.support.v4.view.ViewPager  
+        android:id="@+id/viewPager"  
+        android:layout_width="fill_parent"  
+        android:layout_height="fill_parent" /> 
+        
+    <RelativeLayout  
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+  
+        <LinearLayout  
+            android:id="@+id/viewGroup"  
+            android:layout_width="fill_parent"  
+            android:layout_height="wrap_content"  
+            android:layout_alignParentBottom="true" 
+            android:gravity="center_horizontal"  
+            android:orientation="horizontal"
+            android:layout_marginBottom="120dp">
+        </LinearLayout>
+    </RelativeLayout>  
+    
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="118dp"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo_title"/>
+
+    <TextView 
+        android:id="@+id/idle_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="66dp"
+        android:text="@string/idle_around"
+        android:visibility="gone"
+        android:textSize="18sp"
+        android:textColor="@color/halfwhite"/>
+        
+    
+    <Button
+        android:id="@+id/btn_regist"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_centerHorizontal="true"
+		android:layout_above="@id/idle_textview"
+        android:layout_alignParentBottom="true"
+		android:layout_marginBottom="28dp"
+        android:text="@string/login_later"
+        android:textColor="@color/maintabred"
+        android:layout_marginLeft="65dp"
+        android:layout_marginRight="65dp"
+        android:textSize="16sp"
+        android:background="@drawable/temp_login_btn_selector"
+        android:onClick="temploginClick" />
+    
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_centerHorizontal="true"
+		android:layout_above="@id/btn_regist"
+		android:layout_marginBottom="10dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginRight="65dp"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:background="@drawable/login_btn"
+        android:onClick="loginClick" />
+</RelativeLayout>

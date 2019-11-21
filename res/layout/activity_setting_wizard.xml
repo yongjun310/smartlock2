@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_wizard_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.smart.lock.activity.WizardActivity"
+    android:background="@color/contentBg" >
+	<TextView 
+	    android:id="@+id/title"
+	    android:layout_width="fill_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/maintabred"
+        android:gravity="center"
+        android:text="@string/setting_wizard_title"
+        android:textColor="@color/contentBg"
+        android:textSize="20sp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="56dp"
+        android:layout_marginLeft="37dp"
+        android:visibility="gone"
+        android:background="@drawable/adornment_line"/>
+    
+    <ImageButton
+        android:id="@+id/btn_wizard_open_sys_noti"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/title"
+        android:layout_marginTop="29dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/open_sys_noti_selector"
+        android:onClick="openSysNotiClick" />
+    
+    <ImageButton
+        android:id="@+id/btn_wizard_close_sys_lock"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/btn_wizard_open_sys_noti"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/open_sys_lock_selector"
+        android:onClick="closeSysLockClick" />
+
+    <ImageButton
+            android:id="@+id/btn_wizard_open_float"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/btn_wizard_close_sys_lock"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/open_float_selector"
+            android:visibility="gone"
+            android:onClick="openFloatClick" />
+
+    <ImageButton
+        android:id="@+id/btn_wizard_self_start"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/btn_wizard_open_float"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:visibility="gone"
+        android:background="@drawable/open_self_start_selector"
+        android:onClick="selfStartClick" />
+    
+    <Button
+        android:id="@+id/btn_wizard_skip_next"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="65dp"
+        android:layout_centerHorizontal="true"
+        android:text="立即体验遇见锁屏"
+        android:textColor="#FF6e6e6e"
+        android:background="@drawable/start_btn"
+        android:onClick="skipClick" />
+
+</RelativeLayout>

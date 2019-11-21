@@ -1,0 +1,41 @@
+-optimizationpasses 5
+-dontusemixedcaseclassnames
+-dontskipnonpubliclibraryclasses
+-dontpreverify
+-verbose
+-optimizations !code/simplification/arithmetic,!field/*,!class/merging/*
+-dontoptimize
+-dontwarn android.**
+-dontwarn javax.servlet.**
+-dontwarn org.apache.**
+-ignorewarnings
+
+-optimizationpasses 5
+-dontpreverify
+
+-keep class com.umeng.** {*;}
+-keep interface com.umeng.** {*;}
+
+-keep class android.support.** {*;}
+-keep interface android.support.** {*;}
+
+-keep class org.apache.** {*;}
+-keep interface org.apache.** {*;}
+
+-keep class org.jivesoftware.** {*;}
+-keep interface org.jivesoftware.** {*;}
+
+-keep class com.google.gson.** {*;}
+-keep interface com.google.gson.** {*;}
+
+-keep class com.tencent.** {*;}
+-keep interface com.tencent.** {*;}
+
+-keep class com.igexin.** {*;}
+-keep interface com.igexin.** {*;}
+
+-keep class org.json.simple.** {*;}
+-keep interface org.json.simple.** {*;}
+
+-keep class com.sina.** {*;}
+-keep interface com.sina.** {*;}

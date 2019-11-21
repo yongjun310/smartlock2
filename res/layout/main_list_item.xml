@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:background="@color/maintabbg" >
+    <com.smart.lock.view.AbImageView
+        android:id="@+id/bg_img"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/imagebg"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"/>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="63dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:background="@drawable/mainpage_bg_gradient">
+            <ImageView
+                android:id="@+id/img_favorite"
+                android:layout_width="26dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="17dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/favorite_clicked"/>
+
+            <ImageView
+                android:id="@+id/img_line"
+                android:layout_width="1px"
+                android:layout_height="23dp"
+                android:layout_marginRight="17dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/img_favorite"
+                android:background="@drawable/line"/>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/img_line"
+                android:paddingLeft="15dp"
+                android:textSize="14sp"
+                android:text="title"
+                android:shadowColor="#66000000"
+                android:shadowDx="0"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

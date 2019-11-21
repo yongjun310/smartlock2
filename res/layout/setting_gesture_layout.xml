@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_drawer_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/maintabbg"
+    android:orientation="vertical">
+
+    <include layout="@layout/page_header" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/tablistline" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="15dp"
+                android:background="@color/tablistline" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="1px"
+                android:layout_marginTop="1px"
+                android:background="@color/white"
+                android:onClick="closeGestureClick">
+
+                <TextView
+                    android:id="@+id/geture_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="手势密码"
+                    android:textColor="@color/contentText"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/gesture_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="15dp"
+                    android:onClick="closeGestureClick"
+                    android:src="@drawable/switch_selector" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/gesture_setting_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="1px"
+                android:layout_marginTop="1px"
+                android:background="@color/white"
+                android:onClick="setPWClick">
+
+                <TextView
+                    android:id="@+id/gesture_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="修改手势密码"
+                    android:textColor="@color/contentText"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/arr_right" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/tablistline" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

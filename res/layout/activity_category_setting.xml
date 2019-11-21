@@ -1,0 +1,224 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/sharebg"
+    android:orientation="vertical" >
+
+    <include android:id="@+id/layout_title"
+        layout="@layout/page_header"/>
+
+    <LinearLayout
+        android:id="@+id/layout_mainTab_up"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/layout_title"
+        android:background="@drawable/top_line" >
+
+        <RelativeLayout
+            android:id="@+id/layout_tab_nature"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:onClick="tabItemClick"
+            android:tag="0"
+            android:background="@drawable/rss_nature">
+
+            <ImageView
+                android:id="@+id/img_mainTab_nature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:src="@drawable/category_selector" />
+
+            <TextView
+                android:id="@+id/txt_mainTab_homenature"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:layout_alignParentBottom="true"
+                android:text="自然风景"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_tab_humanity"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:onClick="tabItemClick"
+            android:tag="1"
+            android:background="@drawable/rss_humanity">
+
+            <ImageView
+                android:id="@+id/img_mainTab_humanity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:src="@drawable/category_selector" />
+
+            <TextView
+                android:id="@+id/txt_mainTab_humanity"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:layout_alignParentBottom="true"
+                android:text="人文景观"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_mainTab_xqx"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:onClick="tabItemClick"
+            android:tag="2"
+            android:background="@drawable/rss_xqx">
+
+            <ImageView
+                android:id="@+id/img_mainTab_xqx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:src="@drawable/category_selector" />
+
+            <TextView
+                android:id="@+id/txt_mainTab_xqx"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:layout_alignParentBottom="true"
+                android:text="小清新"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_mainTab_down"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/layout_mainTab_up"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/top_line" >
+
+        <RelativeLayout
+            android:id="@+id/layout_tab_meng"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:onClick="tabItemClick"
+            android:tag="3"
+            android:background="@drawable/rss_meng">
+
+            <ImageView
+                android:id="@+id/img_mainTab_meng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:src="@drawable/category_selector" />
+
+            <TextView
+                android:id="@+id/txt_mainTab_meng"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:layout_alignParentBottom="true"
+                android:text="萌物"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_tab_star"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:onClick="tabItemClick"
+            android:tag="4"
+            android:background="@drawable/rss_star">
+
+            <ImageView
+                android:id="@+id/img_mainTab_star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:src="@drawable/category_selector" />
+
+            <TextView
+                android:id="@+id/txt_mainTab_star"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:layout_alignParentBottom="true"
+                android:text="明星"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_mainTab_ecy"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:onClick="tabItemClick"
+            android:tag="5"
+            android:background="@drawable/rss_ecy">
+
+            <ImageView
+                android:id="@+id/img_mainTab_ecy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:src="@drawable/category_selector" />
+
+            <TextView
+                android:id="@+id/txt_mainTab_ecy"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:layout_alignParentBottom="true"
+                android:text="二次元"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_sure"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+		android:layout_above="@id/idle_textview"
+        android:layout_alignParentBottom="true"
+		android:layout_marginBottom="96dp"
+        android:text="@string/sure"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:background="@drawable/login_btn"
+        android:onClick="sureClick" />
+    
+</RelativeLayout>

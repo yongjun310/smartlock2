@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_exchangeFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/layout_exchange"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+        android:background="@color/contentBg" >
+
+        <EditText
+            android:id="@+id/input_exchange_mobile"
+            android:layout_width="333dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@color/white"
+            android:hint=" 请输入充值手机号"
+            android:inputType="number"
+            android:textColor="@color/contentText"
+            android:textSize="16sp" >
+        </EditText>
+
+        <RelativeLayout
+            android:id="@+id/layout_income"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/input_exchange_mobile"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="20dp" >
+
+            <TextView
+                android:id="@+id/txt_income_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="账户余额："
+                android:textColor="@color/contentTitle"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt_income_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/txt_income_title"
+                android:text="0.00"
+                android:textColor="@color/orange"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt_income_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/txt_income_amount"
+                android:text="元"
+                android:textColor="@color/contentTitle"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/select_amount"
+            android:layout_width="333dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/layout_income"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="21dp"
+            android:background="@color/white"
+            android:onClick="amountSelect"
+            android:text="30元话费" />
+
+        <RelativeLayout
+            android:id="@+id/layout_btn_exchange"
+            android:layout_width="247dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/layout_income"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="141dp"
+            android:background="@drawable/btn_round_corners"
+            android:onClick="exchangeSubmit" >
+
+            <TextView
+                android:id="@+id/txt_exchange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="立即充值"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_drawer"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/transparentBlack"
+            android:onClick="removeDrawer" >
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
